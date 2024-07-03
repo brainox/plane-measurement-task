@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B76D0602C17889C00604E96 /* PlaneMeasurementApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B76D05F2C17889C00604E96 /* PlaneMeasurementApp.swift */; };
+		4B76D0622C17889C00604E96 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B76D0612C17889C00604E96 /* ContentView.swift */; };
+		4B76D0642C17889D00604E96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B76D0632C17889D00604E96 /* Assets.xcassets */; };
+		4B76D0682C17889D00604E96 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B76D0672C17889D00604E96 /* Preview Assets.xcassets */; };
+		4B85491B2C1BEA9F00D3BD03 /* SceneReconstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B85491A2C1BEA9F00D3BD03 /* SceneReconstructionViewController.swift */; };
+		4B85491D2C1BECC900D3BD03 /* SceneReconstructionViewController+CoachingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B85491C2C1BECC900D3BD03 /* SceneReconstructionViewController+CoachingOverlay.swift */; };
+		4B85491F2C1BED5B00D3BD03 /* SceneReconstructionViewController+ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B85491E2C1BED5B00D3BD03 /* SceneReconstructionViewController+ARSCNViewDelegate.swift */; };
+		4B8549212C1BF07B00D3BD03 /* SceneReconstructionViewController+Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8549202C1BF07B00D3BD03 /* SceneReconstructionViewController+Buttons.swift */; };
+		4B8549232C1BF7AA00D3BD03 /* DrawRulersViewController+HitTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8549222C1BF7AA00D3BD03 /* DrawRulersViewController+HitTesting.swift */; };
+		4B8549252C1C7AE300D3BD03 /* QuadNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8549242C1C7AE300D3BD03 /* QuadNode.swift */; };
+		4B8E80402C2A3A6300F23475 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E803F2C2A3A6300F23475 /* Utils.swift */; };
+		4B8E80422C2A3A8E00F23475 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E80412C2A3A8E00F23475 /* Renderer.swift */; };
+		4B8E80442C2A3AA400F23475 /* MetalBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E80432C2A3AA400F23475 /* MetalBuffer.swift */; };
+		4B8E80462C2A3ACF00F23475 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E80452C2A3ACF00F23475 /* Shaders.metal */; };
+		4B8E804A2C2A3C3100F23475 /* SceneReconstructionViewController+MTKViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E80492C2A3C3100F23475 /* SceneReconstructionViewController+MTKViewDelegate.swift */; };
+		4B9A32BC2C1F7A8E00D8EE92 /* RulerEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9A32BB2C1F7A8E00D8EE92 /* RulerEndpoint.swift */; };
+		4B9A32BE2C1F7B6500D8EE92 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9A32BD2C1F7B6500D8EE92 /* Helpers.swift */; };
+		4B9A32C02C1F8ECB00D8EE92 /* DrawRulersViewController+Gestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9A32BF2C1F8ECB00D8EE92 /* DrawRulersViewController+Gestures.swift */; };
+		4B9A32C22C1FD38C00D8EE92 /* DrawRulerViewController+SpriteKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9A32C12C1FD38C00D8EE92 /* DrawRulerViewController+SpriteKit.swift */; };
+		4BBBBF962C1B3E9E00E7F011 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBBBF952C1B3E9E00E7F011 /* Extensions.swift */; };
+		4BBBBF9B2C1B5BC200E7F011 /* MagnifyingGlass in Frameworks */ = {isa = PBXBuildFile; productRef = 4BBBBF9A2C1B5BC200E7F011 /* MagnifyingGlass */; };
+		4BCF47402C18CF6400CB0231 /* DrawRulersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCF473F2C18CF6400CB0231 /* DrawRulersViewController.swift */; };
+		4BCF47642C19069700CB0231 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCF47632C19069700CB0231 /* TableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4B76D05C2C17889C00604E96 /* PlaneMeasurement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaneMeasurement.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B76D05F2C17889C00604E96 /* PlaneMeasurementApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneMeasurementApp.swift; sourceTree = "<group>"; };
+		4B76D0612C17889C00604E96 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4B76D0632C17889D00604E96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B76D0652C17889D00604E96 /* PlaneMeasurement.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PlaneMeasurement.entitlements; sourceTree = "<group>"; };
+		4B76D0672C17889D00604E96 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4B85491A2C1BEA9F00D3BD03 /* SceneReconstructionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneReconstructionViewController.swift; sourceTree = "<group>"; };
+		4B85491C2C1BECC900D3BD03 /* SceneReconstructionViewController+CoachingOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SceneReconstructionViewController+CoachingOverlay.swift"; sourceTree = "<group>"; };
+		4B85491E2C1BED5B00D3BD03 /* SceneReconstructionViewController+ARSCNViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SceneReconstructionViewController+ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
+		4B8549202C1BF07B00D3BD03 /* SceneReconstructionViewController+Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SceneReconstructionViewController+Buttons.swift"; sourceTree = "<group>"; };
+		4B8549222C1BF7AA00D3BD03 /* DrawRulersViewController+HitTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DrawRulersViewController+HitTesting.swift"; sourceTree = "<group>"; };
+		4B8549242C1C7AE300D3BD03 /* QuadNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuadNode.swift; sourceTree = "<group>"; };
+		4B8E803F2C2A3A6300F23475 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		4B8E80412C2A3A8E00F23475 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		4B8E80432C2A3AA400F23475 /* MetalBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalBuffer.swift; sourceTree = "<group>"; };
+		4B8E80452C2A3ACF00F23475 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		4B8E80472C2A3AF100F23475 /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		4B8E80492C2A3C3100F23475 /* SceneReconstructionViewController+MTKViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SceneReconstructionViewController+MTKViewDelegate.swift"; sourceTree = "<group>"; };
+		4B8E804B2C2A466200F23475 /* PlaneMeasurement-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlaneMeasurement-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		4B8E804D2C2A4D3100F23475 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4B9A32BB2C1F7A8E00D8EE92 /* RulerEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulerEndpoint.swift; sourceTree = "<group>"; };
+		4B9A32BD2C1F7B6500D8EE92 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		4B9A32BF2C1F8ECB00D8EE92 /* DrawRulersViewController+Gestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DrawRulersViewController+Gestures.swift"; sourceTree = "<group>"; };
+		4B9A32C12C1FD38C00D8EE92 /* DrawRulerViewController+SpriteKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DrawRulerViewController+SpriteKit.swift"; sourceTree = "<group>"; };
+		4BBBBF952C1B3E9E00E7F011 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4BCF473F2C18CF6400CB0231 /* DrawRulersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawRulersViewController.swift; sourceTree = "<group>"; };
+		4BCF47632C19069700CB0231 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B76D0592C17889C00604E96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BBBBF9B2C1B5BC200E7F011 /* MagnifyingGlass in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B76D0532C17889C00604E96 = {
+			isa = PBXGroup;
+			children = (
+				4B76D05E2C17889C00604E96 /* PlaneMeasurement */,
+				4B76D05D2C17889C00604E96 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B76D05D2C17889C00604E96 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B76D05C2C17889C00604E96 /* PlaneMeasurement.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B76D05E2C17889C00604E96 /* PlaneMeasurement */ = {
+			isa = PBXGroup;
+			children = (
+				4B8E804D2C2A4D3100F23475 /* Info.plist */,
+				4B76D05F2C17889C00604E96 /* PlaneMeasurementApp.swift */,
+				4B76D0612C17889C00604E96 /* ContentView.swift */,
+				4B76D0632C17889D00604E96 /* Assets.xcassets */,
+				4B76D0652C17889D00604E96 /* PlaneMeasurement.entitlements */,
+				4B76D0662C17889D00604E96 /* Preview Content */,
+				4BCF47632C19069700CB0231 /* TableViewController.swift */,
+				4BBBBF952C1B3E9E00E7F011 /* Extensions.swift */,
+				4BCF473F2C18CF6400CB0231 /* DrawRulersViewController.swift */,
+				4B9A32BF2C1F8ECB00D8EE92 /* DrawRulersViewController+Gestures.swift */,
+				4B8549222C1BF7AA00D3BD03 /* DrawRulersViewController+HitTesting.swift */,
+				4B9A32C12C1FD38C00D8EE92 /* DrawRulerViewController+SpriteKit.swift */,
+				4B85491A2C1BEA9F00D3BD03 /* SceneReconstructionViewController.swift */,
+				4B8549202C1BF07B00D3BD03 /* SceneReconstructionViewController+Buttons.swift */,
+				4B85491C2C1BECC900D3BD03 /* SceneReconstructionViewController+CoachingOverlay.swift */,
+				4B8E80492C2A3C3100F23475 /* SceneReconstructionViewController+MTKViewDelegate.swift */,
+				4B85491E2C1BED5B00D3BD03 /* SceneReconstructionViewController+ARSCNViewDelegate.swift */,
+				4B8549242C1C7AE300D3BD03 /* QuadNode.swift */,
+				4B9A32BB2C1F7A8E00D8EE92 /* RulerEndpoint.swift */,
+				4B9A32BD2C1F7B6500D8EE92 /* Helpers.swift */,
+				4B8E803F2C2A3A6300F23475 /* Utils.swift */,
+				4B8E80412C2A3A8E00F23475 /* Renderer.swift */,
+				4B8E80432C2A3AA400F23475 /* MetalBuffer.swift */,
+				4B8E80452C2A3ACF00F23475 /* Shaders.metal */,
+				4B8E80472C2A3AF100F23475 /* ShaderTypes.h */,
+				4B8E804B2C2A466200F23475 /* PlaneMeasurement-Bridging-Header.h */,
+			);
+			path = PlaneMeasurement;
+			sourceTree = "<group>";
+		};
+		4B76D0662C17889D00604E96 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4B76D0672C17889D00604E96 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B76D05B2C17889C00604E96 /* PlaneMeasurement */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B76D06B2C17889D00604E96 /* Build configuration list for PBXNativeTarget "PlaneMeasurement" */;
+			buildPhases = (
+				4B76D0582C17889C00604E96 /* Sources */,
+				4B76D0592C17889C00604E96 /* Frameworks */,
+				4B76D05A2C17889C00604E96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlaneMeasurement;
+			packageProductDependencies = (
+				4BBBBF9A2C1B5BC200E7F011 /* MagnifyingGlass */,
+			);
+			productName = PlaneMeasurement;
+			productReference = 4B76D05C2C17889C00604E96 /* PlaneMeasurement.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B76D0542C17889C00604E96 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					4B76D05B2C17889C00604E96 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 4B76D0572C17889C00604E96 /* Build configuration list for PBXProject "PlaneMeasurement" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B76D0532C17889C00604E96;
+			packageReferences = (
+				4BBBBF992C1B5BC200E7F011 /* XCRemoteSwiftPackageReference "MagnifyingGlass-Swift" */,
+			);
+			productRefGroup = 4B76D05D2C17889C00604E96 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B76D05B2C17889C00604E96 /* PlaneMeasurement */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B76D05A2C17889C00604E96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B76D0682C17889D00604E96 /* Preview Assets.xcassets in Resources */,
+				4B76D0642C17889D00604E96 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B76D0582C17889C00604E96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B76D0622C17889C00604E96 /* ContentView.swift in Sources */,
+				4B9A32BC2C1F7A8E00D8EE92 /* RulerEndpoint.swift in Sources */,
+				4B76D0602C17889C00604E96 /* PlaneMeasurementApp.swift in Sources */,
+				4B85491B2C1BEA9F00D3BD03 /* SceneReconstructionViewController.swift in Sources */,
+				4B8E80462C2A3ACF00F23475 /* Shaders.metal in Sources */,
+				4B8549212C1BF07B00D3BD03 /* SceneReconstructionViewController+Buttons.swift in Sources */,
+				4B8E80442C2A3AA400F23475 /* MetalBuffer.swift in Sources */,
+				4BCF47402C18CF6400CB0231 /* DrawRulersViewController.swift in Sources */,
+				4B9A32C22C1FD38C00D8EE92 /* DrawRulerViewController+SpriteKit.swift in Sources */,
+				4BBBBF962C1B3E9E00E7F011 /* Extensions.swift in Sources */,
+				4B8E80402C2A3A6300F23475 /* Utils.swift in Sources */,
+				4B85491D2C1BECC900D3BD03 /* SceneReconstructionViewController+CoachingOverlay.swift in Sources */,
+				4B85491F2C1BED5B00D3BD03 /* SceneReconstructionViewController+ARSCNViewDelegate.swift in Sources */,
+				4B8549252C1C7AE300D3BD03 /* QuadNode.swift in Sources */,
+				4B8549232C1BF7AA00D3BD03 /* DrawRulersViewController+HitTesting.swift in Sources */,
+				4B9A32BE2C1F7B6500D8EE92 /* Helpers.swift in Sources */,
+				4B9A32C02C1F8ECB00D8EE92 /* DrawRulersViewController+Gestures.swift in Sources */,
+				4B8E804A2C2A3C3100F23475 /* SceneReconstructionViewController+MTKViewDelegate.swift in Sources */,
+				4B8E80422C2A3A8E00F23475 /* Renderer.swift in Sources */,
+				4BCF47642C19069700CB0231 /* TableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4B76D0692C17889D00604E96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4B76D06A2C17889D00604E96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		4B76D06C2C17889D00604E96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PlaneMeasurement/PlaneMeasurement.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PlaneMeasurement/Preview Content\"";
+				DEVELOPMENT_TEAM = 5RP57LT5Y7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlaneMeasurement/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "gib camera access pls";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "arkit metal";
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adwith.PlaneMeasurementk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PlaneMeasurement-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B76D06D2C17889D00604E96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PlaneMeasurement/PlaneMeasurement.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PlaneMeasurement/Preview Content\"";
+				DEVELOPMENT_TEAM = 5RP57LT5Y7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlaneMeasurement/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "gib camera access pls";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "arkit metal";
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adwith.PlaneMeasurementk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PlaneMeasurement-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B76D0572C17889C00604E96 /* Build configuration list for PBXProject "PlaneMeasurement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B76D0692C17889D00604E96 /* Debug */,
+				4B76D06A2C17889D00604E96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B76D06B2C17889D00604E96 /* Build configuration list for PBXNativeTarget "PlaneMeasurement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B76D06C2C17889D00604E96 /* Debug */,
+				4B76D06D2C17889D00604E96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4BBBBF992C1B5BC200E7F011 /* XCRemoteSwiftPackageReference "MagnifyingGlass-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/niczyja/MagnifyingGlass-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4BBBBF9A2C1B5BC200E7F011 /* MagnifyingGlass */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BBBBF992C1B5BC200E7F011 /* XCRemoteSwiftPackageReference "MagnifyingGlass-Swift" */;
+			productName = MagnifyingGlass;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4B76D0542C17889C00604E96 /* Project object */;
+}

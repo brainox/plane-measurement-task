@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "magnifyingglass-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/niczyja/MagnifyingGlass-Swift",
+      "state" : {
+        "revision" : "1827bba7d4221bd93c9c8eb2e8afebf38675c382",
+        "version" : "1.1.0"
+      }
+    }
+  ],
+  "version" : 2
+}
