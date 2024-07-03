@@ -23,7 +23,10 @@ This iOS app allows users to measure distances and angles related to planes.
 ### Recording animation
 ![recordingGIf](https://github.com/brainox/plane-measurement-task/assets/12437059/8915634e-a927-4f4c-9dee-98259afd4516)
 
+![50PercentResize](https://github.com/brainox/plane-measurement-task/assets/12437059/9d86173a-cbdb-4cd3-b8d3-ce1d19b4536d)
+
+
 ## Installation
 
-To run the app, clone the repository and open the project in Xcode. Run in a physical iOS or iPad device
+To run the app, clone the repository and open the project in Xcode. Run on a physical iOS or iPad device
 
